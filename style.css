@@ -1,0 +1,54 @@
+body
+{background: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+.hero_image{
+    background: url(老虎背景.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero_wrapper{
+    color:white;
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+button{
+    z-index: 1;
+    color: white;
+    background: #40a9ff;
+    outline: none;
+    border: none;
+    padding: 0.5em 1em;
+}
+button:hover{
+    cursor: pointer;
+    animation: jelly 0.5s;
+}
+@keyframes jelly{
+    0%,
+    100%{
+        transform: scale(1, 1);
+
+    }
+    25%,
+    75%{
+        transform: scale(0.9, 1.1);
+    }
+    50%{
+        transform: scale(1.1, 0.9);
+    }
+}
+
+.form{
+    width: 100px;
+    height: 8px;
+    top: 40%;
+    left: 50%;
+}
+
